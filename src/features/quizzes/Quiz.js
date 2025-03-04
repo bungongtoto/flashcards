@@ -8,6 +8,8 @@ import { selectAllQuizzes } from "./quizzesSlice";
 
 export default function Quiz() {
   const quizzes = useSelector(selectAllQuizzes) // replace this with a call to your selector to get all the quizzes in state
+
+  console.log(quizzes)
   const { quizId } = useParams();
   const quiz = quizzes[quizId];
 
